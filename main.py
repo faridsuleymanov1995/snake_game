@@ -30,7 +30,7 @@ while end:
     if len(snake1.snake_d)  == y:
         speed -= 0.005
         y += 5
-    # detect collision with wall
+    # detect collision with food and make snake bigger
     if snake1.head.distance(food1) < 16:
         food1.refresh()
         score.increase()
